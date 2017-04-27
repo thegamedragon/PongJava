@@ -10,6 +10,7 @@ public class ScreenSplash implements Screen{
     Game game;
     private float time;
     private boolean doOnce;
+    private final float waitTime = 2.0f;
 
     public ScreenSplash(Game g) {
         game = g;
@@ -39,7 +40,7 @@ public class ScreenSplash implements Screen{
         game.batch.draw(game.splashTitle,Gdx.graphics.getWidth()/2 - game.splashTitle.getWidth()/2 , Gdx.graphics.getHeight()/2 - game.splashTitle.getHeight()/2 );
         game.batch.end();
         time+=Gdx.graphics.getDeltaTime();
-        if(time>=1.0f){
+        if(time>=waitTime){
             game.setScreen(new ScreenMainMenu(game));
         }
         if(doOnce){
