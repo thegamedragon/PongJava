@@ -28,7 +28,6 @@ public class Button {
         else batch.draw(textureOnMouseClick, x, y);
         batch.end();
     }
-    // TODO hi
 
 
 
