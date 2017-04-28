@@ -5,8 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 
 public class ScreenMainMenu implements Screen{
-    Game game; 
-
+    Game game;
 
     public ScreenMainMenu(Game g) {
         game=g;
@@ -23,20 +22,19 @@ public class ScreenMainMenu implements Screen{
         Gdx.gl20.glClearColor(1,0,0,1);
         Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        //Begin
-
-        game.batch.begin();
-
         //draw BG
+        game.batch.begin();
         game.batch.draw(game.background,0,0);
+        game.batch.end();
 
         //draw Buttons
 
-        //draw Playing Game to the left
-        game.batch.draw(game.circleField,0,0);
 
-        //End
+        //draw Playing Game to the left
+        game.batch.begin();
+        game.batch.draw(game.circleField,0,0);
         game.batch.end();
+
     }
 
     @Override
