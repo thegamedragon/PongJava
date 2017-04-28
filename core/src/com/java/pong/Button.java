@@ -22,7 +22,7 @@ public class Button {
         textureOnMouseClick = texture;
     }
 
-    public void draw(SpriteBatch batch, boolean clicked){
+    public void draw(SpriteBatch batch, boolean clicked) {
         batch.begin();
         if(!clicked || textureOnMouseClick == null) batch.draw(textureDefault, x, y);
         else batch.draw(textureOnMouseClick, x, y);
