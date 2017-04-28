@@ -28,8 +28,6 @@ public class ScreenSplash implements Screen{
         Gdx.gl20.glClearColor(0,1,0,1);
         Gdx.gl20.glClear(GL20.GL_COLOR_BUFFER_BIT);
         time = 0;
-
-
     }
 
     @Override
