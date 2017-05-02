@@ -24,6 +24,7 @@ public class Game extends com.badlogic.gdx.Game{
 	public Texture paddleRedRectangle;
 
 
+	public Texture testTexture;
 
 	@Override
 	public void create () {

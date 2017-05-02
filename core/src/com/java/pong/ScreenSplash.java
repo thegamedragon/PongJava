@@ -47,11 +47,13 @@ public class ScreenSplash implements Screen{
             game.assetManager.load("core/assets/CircleField.png",Texture.class);
             game.assetManager.load("core/assets/PaddleGreenCurved.png",Texture.class);
             game.assetManager.load("core/assets/PaddleRedCurved.png",Texture.class);
+            game.assetManager.load("core/assets/testButton.png",Texture.class);
             game.assetManager.finishLoading();
             game.background = game.assetManager.get("core/assets/Background.jpg",Texture.class);
             game.circleField = game.assetManager.get("core/assets/CircleField.png",Texture.class);
             game.paddleGreenCurved = game.assetManager.get("core/assets/PaddleGreenCurved.png",Texture.class);
             game.paddleRedCurved = game.assetManager.get("core/assets/PaddleRedCurved.png",Texture.class);
+            game.testTexture = game.assetManager.get("core/assets/testButton.png",Texture.class);
         }
 
     }
