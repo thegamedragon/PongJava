@@ -30,6 +30,7 @@ public class ScreenMainMenu implements Screen{
         Gdx.input.setInputProcessor(new InputAdapter(){
             @Override
             public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+                screenY=Gdx.graphics.getHeight()-screenY;
                 if(button == Input.Buttons.LEFT){
                     int ID = getButtonID(screenX,screenY);
                     for(Button aux : buttonList){
@@ -41,6 +42,7 @@ public class ScreenMainMenu implements Screen{
 
             @Override
             public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+                screenY=Gdx.graphics.getHeight()-screenY;
                 for(Button aux : buttonList){
                     if(aux.clicked ==true ) System.out.println(aux.ID); //TODO : DO STH BASED ON ID
                     aux.clicked =false;
